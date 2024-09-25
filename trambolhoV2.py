@@ -76,7 +76,6 @@ def busca_largura(problema):
             print(f"Custo total da solução: {no.custo}")
             print(f"Quantidade de nós expandidos: {passos}")
             print(f"Número de nós na BORDA final: {len(borda)}")
-            print(f"Borda final: {[n.estado for n in borda]}")
             return solucao(no)
 
         explorados.add(no.estado)
@@ -118,7 +117,6 @@ def busca_profundidade(problema):
             print(f"Custo total da solução: {no.custo}")
             print(f"Quantidade de nós expandidos: {passos}")
             print(f"Número de nós na BORDA final: {len(borda)}")
-            print(f"Borda final: {[n.estado for n in borda]}")
             return solucao(no)
 
         explorados.add(no.estado)
@@ -160,7 +158,6 @@ def busca_custo_uniforme(problema):
             print(f"Custo total da solução: {custo_atual}")
             print(f"Quantidade de nós expandidos: {passos}")
             print(f"Número de nós na BORDA final: {len(borda)}")
-            print(f"Borda final: {[n.estado for n in borda]}")
             return solucao(no)
 
         explorados[no.estado] = custo_atual
