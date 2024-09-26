@@ -1,7 +1,6 @@
 from collections import deque
 import heapq
 
-
 class Node:
     def __init__(self, estado, pai=None, acao=None, custo=0, profundidade=0):
         self.estado = estado
@@ -13,14 +12,12 @@ class Node:
     def __lt__(self, other):
         return self.custo < other.custo
 
-
 def solucao(no):
     caminho = []
     while no:
         caminho.append(no.estado)
         no = no.pai
     return list(reversed(caminho))
-
 
 def expandir(no, problema):
     sucessores = []
@@ -35,41 +32,63 @@ def expandir(no, problema):
         sucessores.append(filho)
     return sucessores
 
-
 class Problema:
-    def __init__(self, estado_inicial, estado_objetivo, sucessor, custo):
+    def __init__(self, estado_inicial, estado_objetivo, sucessor):
         self.estado_inicial = estado_inicial
         self.estado_objetivo = estado_objetivo
         self.sucessor = sucessor
-        self.custo = custo
-
 
 def sucessor_grafo(estado, grafo):
     return grafo.get(estado, [])
 
-
-def custo_grafo(estado, acao):
-    return acao[1]
-
-
-# Busca em Largura com impressão passo a passo
 def busca_largura(problema):
     borda = deque([Node(problema.estado_inicial)])
-    explorados = set()
-    estados_na_borda = set([problema.estado_inicial])
-
+    explorados = []
     passos = 0
     print("=== Iniciando Busca em Largura ===\n")
 
     while borda:
+        no = borda.popleft()
+
+        if problema.estado_objetivo(no.estado):
+            print("\n=== Objetivo Encontrado ===")
+            print(f"Custo total da solução: {no.custo}")
+            print(f"Quantidade de nós expandidos: {passos}")
+            print(f"Número de nós na BORDA final: {len(borda)}")
+            print(f"Borda final: {[n.estado for n in borda]}")
+            print(f"Nós explorados: {explorados}")
+            return solucao(no)
+        
+        if no.estado in explorados:
+            print(f"Estado {no.estado} já foi explorado, pulando...")                
+            continue
+
         passos += 1
         print(f"Passo {passos}:")
-        print(f"Borda atual: {[n.estado for n in borda]}")
-
-        no = borda.popleft()
-        estados_na_borda.remove(no.estado)
-
         print(f"Explorando nó: {no.estado} (Custo acumulado: {no.custo})")
+        explorados.append(no.estado)
+        
+        for filho in expandir(no, problema):
+            if filho.estado not in explorados:
+                borda.append(filho)
+                print(f"Adicionado à borda: {filho.estado}")
+            else:
+                print(f"-> Estado {filho.estado} já foi explorado <-") 
+
+        print(f"Borda atual: {[n.estado for n in borda]}")
+        print("")  
+
+    print("Falha: solução não encontrada\n")
+    return None
+
+def busca_profundidade(problema):
+    borda = [Node(problema.estado_inicial)]
+    explorados = []
+    passos = 0
+    print("=== Iniciando Busca em Profundidade ===\n")
+
+    while borda:
+        no = borda.pop()
 
         if problema.estado_objetivo(no.estado):
             print("\n=== Objetivo Encontrado ===")
@@ -80,170 +99,106 @@ def busca_largura(problema):
             print(f"Nós explorados: {explorados}")
             return solucao(no)
 
-        explorados.add(no.estado)
+        if no.estado in explorados:
+            print(f"Estado {no.estado} já foi explorado, pulando...")          
+            continue
 
-        for filho in expandir(no, problema):
-            if filho.estado not in explorados and filho.estado not in estados_na_borda:
-                borda.append(filho)
-                estados_na_borda.add(filho.estado)
-                print(
-                    f"Adicionado à borda: {filho.estado} (Custo: {filho.custo})")
-
-        print("")  # Linha em branco para melhor leitura
-
-    print("Falha: solução não encontrada\n")
-    return None
-
-
-def busca_profundidade(problema):
-    borda = [Node(problema.estado_inicial)]
-    explorados = set()
-    # Removido estados_na_borda para permitir repetições na borda
-
-    passos = 0
-    print("=== Iniciando Busca em Profundidade ===\n")
-
-    while borda:
         passos += 1
         print(f"Passo {passos}:")
-        print(f"Borda atual: {[n.estado for n in borda]}")
-
-        no = borda.pop()  # Remove o último elemento da borda (pilha)
-
         print(f"Explorando nó: {no.estado} (Custo acumulado: {no.custo})")
+        explorados.append(no.estado)
 
-        if problema.estado_objetivo(no.estado):
-            print("\n=== Objetivo Encontrado ===")
-            print(f"Custo total da solução: {no.custo}")
-            print(f"Quantidade de nós expandidos: {passos}")
-            print(f"Número de nós na BORDA final: {len(borda)}")
-            return solucao(no)
-
-        explorados.add(no.estado)
-
-        # Obter os filhos
-        filhos = expandir(no, problema)
-
-        # Adicionar os filhos à borda na ordem inversa manualmente
-        # Para explorar D antes de F, adicione F primeiro e depois D
-        for filho in filhos:
+        for filho in expandir(no, problema):
             if filho.estado not in explorados:
                 borda.append(filho)
-                print(
-                    f"Adicionado à borda: {filho.estado} (Custo: {filho.custo})")
-
-        print("")  # Linha em branco para melhor leitura
+                print(f"Adicionado à borda: {filho.estado}")
+            else:
+                print(f"-> Estado {filho.estado} já foi explorado <-")  
+                
+        print(f"Borda atual: {[n.estado for n in borda]}")
+        print("") 
 
     print("Falha: solução não encontrada\n")
     return None
 
-
-# Busca de Custo Uniforme com impressão passo a passo
 def busca_custo_uniforme(problema):
     borda = []
     heapq.heappush(borda, (0, Node(problema.estado_inicial)))
     explorados = {}
-    estados_na_borda = {problema.estado_inicial: 0}
 
     passos = 0
     print("=== Iniciando Busca de Custo Uniforme ===\n")
 
     while borda:
-        passos += 1
-        print(f"Passo {passos}:")
-        print(f"Borda atual: {[(c, n.estado) for c, n in borda]}")
-
         custo_atual, no = heapq.heappop(borda)
 
-        print(f"Explorando nó: {no.estado} (Custo acumulado: {custo_atual})")
+        # Verifica se já encontramos um caminho melhor para este estado
+        if no.estado in explorados and custo_atual > explorados[no.estado]:
+            continue
+
+        explorados[no.estado] = custo_atual
 
         if problema.estado_objetivo(no.estado):
             print("\n=== Objetivo Encontrado ===")
             print(f"Custo total da solução: {custo_atual}")
             print(f"Quantidade de nós expandidos: {passos}")
             print(f"Número de nós na BORDA final: {len(borda)}")
-            print(f"Borda final: {[n.estado for c, n in borda]}")
+            print(f"Borda final: {[n.estado for _, n in borda]}")
+            print(f"Nós explorados: {list(explorados.keys())}")
             return solucao(no)
 
-        explorados[no.estado] = custo_atual
+        passos += 1
+        print(f"Passo {passos}:")
+        print(f"Explorando nó: {no.estado} (Custo acumulado: {custo_atual})")
+
         for sucessor in expandir(no, problema):
             estado_sucessor = sucessor.estado
             custo_sucessor = sucessor.custo
 
-            if estado_sucessor not in explorados or custo_sucessor < explorados.get(estado_sucessor, float('inf')):
+            if estado_sucessor not in explorados or custo_sucessor < explorados[estado_sucessor]:
                 heapq.heappush(borda, (custo_sucessor, sucessor))
-                estados_na_borda[estado_sucessor] = custo_sucessor
-                print(
-                    f"Adicionado à borda: {sucessor.estado} (Custo: {sucessor.custo})")
+                print(f"Adicionado à borda: {sucessor.estado} (Custo: {sucessor.custo})")
 
-        print("")  # Linha em branco para melhor leitura
+        print(f"Borda atual: {[(c, n.estado) for c, n in borda]}")
+        print("")
 
     print("Falha: solução não encontrada\n")
     return None
 
-
-# Busca em Profundidade Limitada com impressão da borda passo a passo
 def busca_profundidade_limitada(problema, limite):
-    nos_expandidos = set()
-    borda = []
-    passos = 0
-
-    print(
-        f"=== Iniciando Busca em Profundidade Limitada (Limite: {limite}) ===\n")
-
-    def recursive_dls(no, problema, limite):
-        nonlocal passos
-        passos += 1
-
+    def bpl(no, caminho, limite, passos):
         print(f"Passo {passos}:")
-        print(f"Borda atual: {[n.estado for n in borda]}")
-        print(f"Explorando nó: {no.estado} (Profundidade: {no.profundidade})")
-
-        borda.append(no)  # Adiciona o nó atual à borda
-
-        nos_expandidos.add(no.estado)
+        print(f"Explorando nó: {no.estado} (Custo acumulado: {no.custo}, Profundidade: {no.profundidade})")
 
         if problema.estado_objetivo(no.estado):
             print("\n=== Objetivo Encontrado ===")
             print(f"Custo total da solução: {no.custo}")
-            print(f"Quantidade de nós expandidos: {len(nos_expandidos)}")
-            print(f"Número de nós na BORDA final: {len(borda)}")
-            return solucao(no), False
+            print(f"Quantidade de nós expandidos: {passos}")
+            print(f"Caminho da solução: {solucao(no)}")
+            return solucao(no), passos
 
-        elif limite == 0:
-            print(f"Nó {no.estado} atingiu o limite de profundidade.\n")
-            borda.pop()  # Remove o nó atual da borda ao voltar da recursão
-            return None, True
+        if limite == 0:
+            print(f"Limite de profundidade atingido para nó: {no.estado}")
+            return None, passos
 
-        else:
-            cutoff_occurred = False
-            for filho in expandir(no, problema):
-                if filho.estado not in nos_expandidos:
-                    resultado, cutoff = recursive_dls(
-                        filho, problema, limite - 1)
-                    if cutoff:
-                        cutoff_occurred = True
-                    elif resultado is not None:
-                        return resultado, False
-            borda.pop()  # Remove o nó atual da borda ao voltar da recursão
-            return None, cutoff_occurred
+        for filho in expandir(no, problema):
+            if filho.estado not in caminho:
+                caminho.append(filho.estado)
+                resultado, passos = bpl(filho, caminho, limite - 1, passos + 1)
+                if resultado is not None:
+                    return resultado, passos
+                caminho.pop() 
+        return None, passos
 
-    no_inicial = Node(problema.estado_inicial)
-    resultado, cutoff = recursive_dls(no_inicial, problema, limite)
-
-    print(f"Quantidade de nós expandidos: {len(nos_expandidos)}")
-
-    if resultado:
-        return resultado
-    elif cutoff:
-        print("Corte ocorreu, solução não encontrada dentro do limite.\n")
-        return None
+    no_inicial = Node(problema.estado_inicial, profundidade=0)
+    caminho_inicial = [no_inicial.estado]
+    solucao_encontrada, total_passos = bpl(no_inicial, caminho_inicial, limite, 1)
+    if solucao_encontrada:
+        print(f"Solução encontrada com {total_passos} passos.")
     else:
-        print("Falha, solução não encontrada.\n")
-        return None
+        print("Falha: solução não encontrada dentro do limite\n")
+    return solucao_encontrada
 
-
-# Definição do grafo das cidades
 cidades = {
     'Arad': [('Sibiu', 140), ('Timisoara', 118), ('Zerind', 75)],
     'Zerind': [('Arad', 75), ('Oradea', 71)],
@@ -267,14 +222,6 @@ cidades = {
     'Neamt': [('Iasi', 87)]
 }
 
-problema_cidades = Problema(
-    estado_inicial='Arad',
-    estado_objetivo=lambda x: x == 'Bucareste',
-    sucessor=lambda estado: sucessor_grafo(estado, cidades),
-    custo=custo_grafo
-)
-
-# Definição do grafo genérico
 grafo = {
     'A': [('B', 3), ('C', 1), ('D', 2)],
     'B': [('A', 3), ('E', 3)],
@@ -285,15 +232,19 @@ grafo = {
     'G': [('C', 0), ('D', 0), ('F', 5)]
 }
 
-problema_grafo1 = Problema(
-    estado_inicial='A',
-    estado_objetivo=lambda x: x == 'F',
-    sucessor=lambda estado: sucessor_grafo(estado, grafo),
-    custo=custo_grafo
+problema_cidades = Problema(
+    estado_inicial='Arad',
+    estado_objetivo=lambda x: x == 'Bucareste',
+    sucessor=lambda estado: sucessor_grafo(estado, cidades)
 )
 
+problema_grafo = Problema(
+    estado_inicial='A',
+    estado_objetivo=lambda x: x == 'F',
+    sucessor=lambda estado: sucessor_grafo(estado, grafo)
+)
 
-# Testando as buscas no grafo das cidades
+# Teste grafo das cidades
 print("=== Testando no Grafo das Cidades ===")
 print("\nBusca em Largura:")
 solucao_largura_cidades = busca_largura(problema_cidades)
@@ -308,28 +259,27 @@ solucao_custo_uniforme_cidades = busca_custo_uniforme(problema_cidades)
 print("Solução:", solucao_custo_uniforme_cidades)
 
 print("\nBusca em Profundidade Limitada:")
-limite = 5
+limite = 3
 solucao_profundidade_limitada_cidades = busca_profundidade_limitada(
     problema_cidades, limite)
 print("Solução:", solucao_profundidade_limitada_cidades)
 
-
-# Testando as buscas no grafo genérico
+# Teste grafo genérico
 print("\n\n=== Testando no Grafo Genérico ===")
 print("\nBusca em Largura:")
-solucao_largura_grafo1 = busca_largura(problema_grafo1)
+solucao_largura_grafo1 = busca_largura(problema_grafo)
 print("Solução:", solucao_largura_grafo1)
 
 print("\nBusca em Profundidade:")
-solucao_profundidade_grafo1 = busca_profundidade(problema_grafo1)
+solucao_profundidade_grafo1 = busca_profundidade(problema_grafo)
 print("Solução:", solucao_profundidade_grafo1)
 
 print("\nBusca de Custo Uniforme:")
-solucao_custo_uniforme_grafo1 = busca_custo_uniforme(problema_grafo1)
+solucao_custo_uniforme_grafo1 = busca_custo_uniforme(problema_grafo)
 print("Solução:", solucao_custo_uniforme_grafo1)
 
 print("\nBusca em Profundidade Limitada:")
 limite = 3
 solucao_profundidade_limitada_grafo1 = busca_profundidade_limitada(
-    problema_grafo1, limite)
+    problema_grafo, limite)
 print("Solução:", solucao_profundidade_limitada_grafo1)
