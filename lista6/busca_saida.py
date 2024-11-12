@@ -20,13 +20,13 @@ def gerar_sucessores(estado, estado_pai):
     indice_zero = estado.index(0)
     movimentos = []
     if indice_zero % 3 > 0:
-        movimentos.append(-1)
+        movimentos.append(-1)  # mover para a esquerda
     if indice_zero % 3 < 2:
-        movimentos.append(1)
+        movimentos.append(1)   # mover para a direita
     if indice_zero // 3 > 0:
-        movimentos.append(-3)
+        movimentos.append(-3)  # mover para cima
     if indice_zero // 3 < 2:
-        movimentos.append(3)
+        movimentos.append(3)   # mover para baixo
     for movimento in movimentos:
         novo_estado = estado.copy()
         indice_troca = indice_zero + movimento
@@ -39,16 +39,16 @@ def gerar_sucessores(estado, estado_pai):
 def imprimir_estado(estado):
     for i in range(0, 9, 3):
         linha = estado[i:i+3]
-        print(' '.join(str(num) if num != 0 else ' ' for num in linha))
-    print("--------")
+        print(linha)
+    print()
 
 
 def busca(estado_inicial, estado_objetivo, algoritmo='gulosa'):
     fronteira = []
     # (prioridade, estado, custo, caminho, estado_pai)
-    heapq.heappush(fronteira, (0, estado_inicial, 0, [], None))
+    heapq.heappush(fronteira, (0, estado_inicial, 0, [estado_inicial], None))
     visitados = set()
-    num_passos = 0
+    explorados = []
     while fronteira:
         prioridade, estado_atual, custo, caminho, estado_pai = heapq.heappop(
             fronteira)
@@ -56,57 +56,49 @@ def busca(estado_inicial, estado_objetivo, algoritmo='gulosa'):
         if estado_tupla in visitados:
             continue
         visitados.add(estado_tupla)
-        caminho = caminho + [estado_atual]
-        num_passos += 1
-
-        print(
-            f"\nPasso {num_passos} | Custo: {custo} | Prioridade: {prioridade}")
-        print("Estado atual:")
-        imprimir_estado(estado_atual)
+        explorados.append(estado_atual)
 
         if estado_atual == estado_objetivo:
-            print("Objetivo alcançado!")
+            print(f"Custo Total: {custo}")
+            print("-----------------")
+            print("Caminho:")
+            for estado in caminho:
+                imprimir_estado(estado)
+            print("Explorados:")
+            for estado in explorados:
+                imprimir_estado(estado)
+            print("--------------")
+            print("Borda:")
+            for item in fronteira:
+                estado_borda = item[1]
+                imprimir_estado(estado_borda)
             return
 
         sucessores = gerar_sucessores(
             estado_atual, estado_pai if estado_pai else [])
-        print("Sucessores gerados:")
-        sucessor_prioridades = []
         for sucessor in sucessores:
-            if algoritmo == 'gulosa':
-                h = heuristica(sucessor, estado_objetivo, tipo='manhattan')
-                prioridade_sucessor = h
-            elif algoritmo == 'a*':
+            if tuple(sucessor) in visitados:
+                continue
+            if algoritmo == 'a*':
                 g = custo + 1
                 h = heuristica(sucessor, estado_objetivo, tipo='manhattan')
                 prioridade_sucessor = g + h
-            sucessor_prioridades.append((prioridade_sucessor, sucessor))
-            print(f"Prioridade: {prioridade_sucessor}")
-            imprimir_estado(sucessor)
-            heapq.heappush(fronteira, (prioridade_sucessor,
-                           sucessor, custo+1, caminho, estado_atual))
-
-        # Identificar o sucessor escolhido (com menor prioridade)
-        if sucessor_prioridades:
-            menor_prioridade, melhor_sucessor = min(
-                sucessor_prioridades, key=lambda x: x[0])
-            print("Sucessor escolhido para expansão futura:")
-            print(f"Prioridade: {menor_prioridade}")
-            imprimir_estado(melhor_sucessor)
-
+            elif algoritmo == 'gulosa':
+                h = heuristica(sucessor, estado_objetivo, tipo='manhattan')
+                prioridade_sucessor = h
+            heapq.heappush(fronteira, (prioridade_sucessor, sucessor,
+                           custo+1, caminho + [sucessor], estado_atual))
     print("Falha ao encontrar solução.")
 
 
 estado_inicial = [3, 1, 2,
-                  4, 0, 5,
+                  0, 4, 5,
                   6, 7, 8]
 
 estado_objetivo = [0, 1, 2,
                    3, 4, 5,
                    6, 7, 8]
 
-print("Busca Gulosa:")
-busca(estado_inicial, estado_objetivo, algoritmo='gulosa')
+busca(estado_inicial, estado_objetivo)
 
-print("\nBusca A*:")
-busca(estado_inicial, estado_objetivo, algoritmo='a*')
+# busca(estado_inicial, estado_objetivo, algoritmo='a*')
