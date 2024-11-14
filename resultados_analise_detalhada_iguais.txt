@@ -1,0 +1,1380 @@
+
+Resultados para a Configuração de Tabuleiro 1:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         2              0.095487       4              0.221836       
+2         1              0.085502       2              0.215818       
+3         1              0.119102       4              0.252064       
+4         1              0.119119       2              0.211410       
+5         1              0.089797       5              0.221913       
+6         1              0.138661       4              0.213251       
+7         1              0.109691       4              0.232679       
+8         2              0.086711       5              0.206766       
+9         1              0.087078       4              0.207124       
+10        2              0.091522       2              0.207342       
+11        1              0.151530       4              0.207831       
+12        1              0.141373       5              0.228040       
+13        1              0.118456       5              0.206671       
+14        1              0.094230       4              0.207812       
+15        1              0.081460       5              0.206561       
+16        2              0.085282       4              0.213923       
+17        2              0.090228       3              0.212957       
+18        1              0.131347       4              0.224715       
+19        1              0.124173       5              0.222681       
+20        1              0.083803       4              0.220553       
+21        2              0.092230       3              0.210307       
+22        2              0.100865       3              0.210448       
+23        1              0.116398       4              0.207936       
+24        2              0.089565       4              0.214108       
+25        2              0.081073       3              0.207982       
+26        2              0.081081       4              0.215975       
+27        1              0.087289       4              0.207236       
+28        1              0.105614       4              0.207396       
+29        2              0.094391       3              0.216183       
+30        1              0.093311       4              0.207392       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.37, Média de Conflitos (GA4): 3.83
+Média de Tempo (SA): 0.102212 s, Média de Tempo (GA4): 0.214897 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 16.5, p-valor = 3.603776394872034e-11
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 2:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         0              0.027023       4              0.211692       
+2         1              0.160634       4              0.213346       
+3         2              0.110587       4              0.224790       
+4         2              0.080707       3              0.212969       
+5         2              0.080374       3              0.217179       
+6         0              0.029419       2              0.221781       
+7         1              0.146578       4              0.218595       
+8         1              0.108495       4              0.207694       
+9         2              0.079713       4              0.210317       
+10        2              0.089744       3              0.238301       
+11        1              0.098241       5              0.209847       
+12        1              0.137193       4              0.214444       
+13        2              0.112081       4              0.211873       
+14        2              0.088720       5              0.207856       
+15        1              0.154331       4              0.208664       
+16        1              0.135881       4              0.213248       
+17        1              0.119890       4              0.215493       
+18        1              0.140868       4              0.213508       
+19        1              0.090840       3              0.212120       
+20        2              0.083870       4              0.207197       
+21        1              0.130084       4              0.209134       
+22        2              0.082275       4              0.208368       
+23        1              0.131351       2              0.222118       
+24        1              0.178492       4              0.222564       
+25        2              0.116951       4              0.222116       
+26        2              0.097169       3              0.215465       
+27        1              0.081233       4              0.227896       
+28        2              0.105904       5              0.239915       
+29        2              0.097468       4              0.215215       
+30        1              0.096556       4              0.240192       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.37, Média de Conflitos (GA4): 3.80
+Média de Tempo (SA): 0.106422 s, Média de Tempo (GA4): 0.217130 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 13.0, p-valor = 2.2710560496531133e-11
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 3:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         2              0.093474       3              0.244598       
+2         1              0.105933       5              0.210572       
+3         1              0.134739       3              0.216403       
+4         2              0.107310       4              0.299704       
+5         2              0.095205       4              0.222619       
+6         1              0.151580       4              0.296459       
+7         2              0.106967       3              0.290137       
+8         1              0.137402       5              0.256875       
+9         2              0.100513       2              0.332468       
+10        2              0.094807       4              0.240087       
+11        2              0.092094       4              0.254361       
+12        2              0.148947       4              0.276451       
+13        2              0.095674       3              0.275108       
+14        2              0.088523       5              0.213995       
+15        2              0.096377       2              0.222205       
+16        2              0.089124       4              0.219496       
+17        2              0.083370       3              0.211953       
+18        2              0.102493       3              0.242074       
+19        1              0.087980       5              0.260562       
+20        1              0.112906       5              0.219613       
+21        1              0.115358       3              0.222287       
+22        1              0.138119       3              0.216616       
+23        1              0.091882       4              0.214003       
+24        2              0.100146       3              0.218473       
+25        1              0.155467       3              0.221731       
+26        2              0.090516       4              0.233173       
+27        1              0.105241       4              0.255452       
+28        1              0.083498       3              0.237101       
+29        0              0.080063       4              0.224739       
+30        1              0.161306       3              0.210141       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.50, Média de Conflitos (GA4): 3.63
+Média de Tempo (SA): 0.108234 s, Média de Tempo (GA4): 0.241982 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 16.0, p-valor = 4.664342224115071e-11
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 4:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         1              0.146774       4              0.220809       
+2         1              0.163242       5              0.239804       
+3         1              0.124046       5              0.208915       
+4         2              0.093822       2              0.207899       
+5         2              0.088728       4              0.207133       
+6         1              0.129329       4              0.211571       
+7         2              0.079499       4              0.221161       
+8         1              0.085000       4              0.211551       
+9         1              0.094795       3              0.207729       
+10        2              0.101999       3              0.207190       
+11        2              0.080216       5              0.207927       
+12        1              0.174040       4              0.212227       
+13        2              0.096611       4              0.210077       
+14        0              0.031285       4              0.210811       
+15        1              0.098317       5              0.218866       
+16        1              0.100788       3              0.208663       
+17        2              0.084145       4              0.216794       
+18        1              0.096687       4              0.207937       
+19        2              0.086926       4              0.220224       
+20        2              0.085093       3              0.219708       
+21        2              0.087881       4              0.221984       
+22        1              0.171747       4              0.210001       
+23        1              0.186679       3              0.237631       
+24        1              0.153775       3              0.253365       
+25        1              0.107826       5              0.257989       
+26        2              0.087258       3              0.239583       
+27        2              0.116738       4              0.230123       
+28        1              0.158585       2              0.216312       
+29        1              0.090955       3              0.217067       
+30        2              0.094953       5              0.229834       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.40, Média de Conflitos (GA4): 3.80
+Média de Tempo (SA): 0.109925 s, Média de Tempo (GA4): 0.219696 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 13.0, p-valor = 3.5328196554164677e-11
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 5:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         1              0.134785       5              0.221062       
+2         1              0.092736       3              0.210329       
+3         1              0.146735       3              0.225924       
+4         2              0.103605       4              0.231209       
+5         1              0.136454       4              0.216556       
+6         2              0.087656       3              0.210955       
+7         1              0.097391       4              0.228494       
+8         1              0.141149       4              0.227542       
+9         2              0.089655       4              0.224601       
+10        2              0.100371       5              0.241190       
+11        1              0.167420       4              0.231512       
+12        1              0.142220       1              0.240105       
+13        2              0.090742       4              0.222238       
+14        1              0.104934       2              0.227663       
+15        2              0.094515       3              0.211281       
+16        1              0.098913       3              0.211569       
+17        2              0.088497       4              0.211894       
+18        1              0.178135       5              0.217356       
+19        2              0.078588       5              0.213675       
+20        1              0.104587       5              0.218531       
+21        1              0.115922       4              0.217382       
+22        1              0.145554       3              0.213431       
+23        1              0.157223       4              0.223698       
+24        2              0.106411       4              0.237234       
+25        2              0.107983       3              0.245389       
+26        1              0.111812       4              0.230163       
+27        1              0.089464       5              0.207371       
+28        2              0.089766       4              0.225028       
+29        1              0.139672       5              0.243562       
+30        1              0.147257       4              0.223749       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.37, Média de Conflitos (GA4): 3.83
+Média de Tempo (SA): 0.116338 s, Média de Tempo (GA4): 0.223690 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 26.0, p-valor = 1.0456974376953873e-10
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 6:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         1              0.146204       4              0.225685       
+2         1              0.187392       6              0.212866       
+3         0              0.040896       3              0.230674       
+4         1              0.093011       5              0.206511       
+5         2              0.079750       3              0.208032       
+6         2              0.084006       4              0.214881       
+7         1              0.085248       3              0.207781       
+8         2              0.087528       4              0.208814       
+9         1              0.111200       4              0.224498       
+10        2              0.088873       4              0.207005       
+11        1              0.127065       5              0.238955       
+12        1              0.096913       3              0.234450       
+13        1              0.152245       5              0.220565       
+14        1              0.086566       5              0.218801       
+15        2              0.080782       4              0.218455       
+16        1              0.134819       4              0.217031       
+17        1              0.093812       5              0.215752       
+18        1              0.101406       4              0.216022       
+19        2              0.085487       4              0.215081       
+20        1              0.079556       4              0.219918       
+21        1              0.109619       3              0.207510       
+22        1              0.087686       4              0.211104       
+23        1              0.094121       3              0.210598       
+24        1              0.134933       4              0.207132       
+25        0              0.077174       4              0.205336       
+26        1              0.131333       4              0.214499       
+27        0              0.079083       5              0.211001       
+28        1              0.082485       4              0.207747       
+29        1              0.138190       3              0.206546       
+30        1              0.155875       4              0.207802       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.10, Média de Conflitos (GA4): 4.03
+Média de Tempo (SA): 0.104442 s, Média de Tempo (GA4): 0.215035 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 0.0, p-valor = 6.251255504648302e-12
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 7:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         1              0.107814       4              0.209123       
+2         1              0.142746       4              0.207683       
+3         1              0.145940       4              0.222263       
+4         2              0.088213       4              0.220435       
+5         2              0.092087       3              0.218361       
+6         1              0.124044       4              0.210082       
+7         1              0.100485       4              0.209310       
+8         1              0.158400       4              0.208961       
+9         2              0.106001       4              0.214867       
+10        2              0.088657       4              0.208938       
+11        1              0.096316       4              0.207858       
+12        2              0.095020       4              0.207654       
+13        1              0.100330       5              0.206277       
+14        1              0.101314       3              0.207230       
+15        1              0.165683       5              0.214572       
+16        1              0.127926       4              0.209447       
+17        2              0.101873       4              0.226378       
+18        1              0.114177       5              0.208726       
+19        2              0.089761       4              0.225652       
+20        2              0.092869       4              0.207977       
+21        1              0.081472       3              0.207814       
+22        1              0.158392       3              0.214269       
+23        2              0.084293       4              0.215130       
+24        2              0.101528       5              0.210292       
+25        2              0.081645       5              0.214418       
+26        1              0.149881       4              0.214954       
+27        2              0.083631       4              0.210927       
+28        2              0.080292       5              0.209463       
+29        2              0.087380       4              0.207889       
+30        1              0.089139       4              0.214920       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.47, Média de Conflitos (GA4): 4.07
+Média de Tempo (SA): 0.107910 s, Média de Tempo (GA4): 0.212396 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 0.0, p-valor = 5.571078829190495e-12
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 8:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         1              0.134524       4              0.210424       
+2         2              0.082916       4              0.220777       
+3         1              0.134146       5              0.211282       
+4         1              0.089602       5              0.213956       
+5         1              0.095956       4              0.213927       
+6         1              0.122536       2              0.208747       
+7         1              0.114991       3              0.215498       
+8         2              0.083122       4              0.208404       
+9         2              0.083738       3              0.207772       
+10        2              0.089414       4              0.209136       
+11        0              0.076540       4              0.207572       
+12        2              0.126682       4              0.209027       
+13        2              0.081194       5              0.209037       
+14        1              0.173146       2              0.222915       
+15        1              0.160637       2              0.210064       
+16        2              0.087212       4              0.207825       
+17        0              0.008877       4              0.208755       
+18        2              0.090549       5              0.213984       
+19        1              0.084999       5              0.211081       
+20        2              0.085366       5              0.209575       
+21        2              0.091000       5              0.212266       
+22        2              0.108112       3              0.211705       
+23        2              0.091049       4              0.207996       
+24        1              0.094808       4              0.207536       
+25        1              0.162340       4              0.208683       
+26        2              0.082429       4              0.207511       
+27        2              0.080976       3              0.207301       
+28        1              0.100112       5              0.211761       
+29        2              0.086974       5              0.218204       
+30        2              0.081081       4              0.206856       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.47, Média de Conflitos (GA4): 3.97
+Média de Tempo (SA): 0.099501 s, Média de Tempo (GA4): 0.210986 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 24.0, p-valor = 9.522227562405429e-11
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 9:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         2              0.080830       3              0.206447       
+2         2              0.083328       3              0.207886       
+3         2              0.083166       4              0.206459       
+4         1              0.134336       4              0.206673       
+5         1              0.085037       5              0.206647       
+6         1              0.132521       5              0.209438       
+7         2              0.093122       5              0.207852       
+8         1              0.089150       4              0.211286       
+9         1              0.092625       3              0.207670       
+10        2              0.083784       4              0.207639       
+11        1              0.082875       3              0.206833       
+12        1              0.127526       4              0.207855       
+13        0              0.028282       3              0.220989       
+14        1              0.125277       3              0.207265       
+15        2              0.088062       4              0.211175       
+16        1              0.081722       4              0.206181       
+17        2              0.085804       4              0.206987       
+18        2              0.091743       4              0.206911       
+19        1              0.139092       4              0.207458       
+20        1              0.164054       3              0.214440       
+21        1              0.134243       4              0.212201       
+22        1              0.114626       2              0.209481       
+23        2              0.116212       4              0.210220       
+24        1              0.147397       4              0.209608       
+25        1              0.131633       4              0.208000       
+26        1              0.163338       5              0.220149       
+27        1              0.163266       4              0.212672       
+28        1              0.120434       4              0.207238       
+29        2              0.091405       5              0.215992       
+30        2              0.100654       4              0.206488       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.33, Média de Conflitos (GA4): 3.87
+Média de Tempo (SA): 0.108518 s, Média de Tempo (GA4): 0.209538 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 5.5, p-valor = 1.2940479190786806e-11
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 10:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         1              0.080977       4              0.208226       
+2         2              0.098054       4              0.209853       
+3         0              0.003628       4              0.215683       
+4         1              0.122528       3              0.211938       
+5         2              0.099098       2              0.207746       
+6         1              0.139820       4              0.207295       
+7         1              0.106503       3              0.206969       
+8         1              0.081670       4              0.206914       
+9         1              0.118829       4              0.207567       
+10        1              0.124466       4              0.236079       
+11        1              0.111642       4              0.207733       
+12        1              0.166455       4              0.207941       
+13        1              0.080545       4              0.207205       
+14        2              0.081619       2              0.207479       
+15        1              0.107615       2              0.207597       
+16        1              0.138843       5              0.206651       
+17        1              0.163385       3              0.216943       
+18        1              0.088701       4              0.207213       
+19        2              0.081980       4              0.207534       
+20        1              0.165096       5              0.207237       
+21        1              0.104119       5              0.211082       
+22        1              0.095984       4              0.209707       
+23        2              0.090582       2              0.213380       
+24        2              0.089120       3              0.217112       
+25        2              0.084926       3              0.207089       
+26        2              0.082728       4              0.207878       
+27        2              0.083078       4              0.209336       
+28        1              0.138041       5              0.208804       
+29        1              0.081965       4              0.214282       
+30        2              0.091531       3              0.213919       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.30, Média de Conflitos (GA4): 3.67
+Média de Tempo (SA): 0.103451 s, Média de Tempo (GA4): 0.210480 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 20.0, p-valor = 5.202096753435737e-11
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 11:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         2              0.106495       3              0.272247       
+2         2              0.086145       4              0.431488       
+3         1              0.154782       3              0.226614       
+4         1              0.149980       3              0.219311       
+5         1              0.123885       4              0.213321       
+6         2              0.086437       4              0.223814       
+7         1              0.089657       4              0.207060       
+8         1              0.129878       4              0.217762       
+9         2              0.086535       4              0.233672       
+10        1              0.084606       5              0.212536       
+11        1              0.100251       3              0.210442       
+12        2              0.088352       4              0.213820       
+13        1              0.085034       4              0.243232       
+14        1              0.084959       3              0.209514       
+15        1              0.123793       5              0.215559       
+16        2              0.081560       4              0.213270       
+17        1              0.109298       4              0.208328       
+18        1              0.095448       4              0.211950       
+19        1              0.134801       2              0.208765       
+20        2              0.084585       3              0.221821       
+21        1              0.127311       3              0.208254       
+22        1              0.108102       4              0.218218       
+23        1              0.081205       4              0.224808       
+24        1              0.141133       4              0.228973       
+25        1              0.127618       4              0.218132       
+26        1              0.168057       4              0.222829       
+27        1              0.088990       5              0.227193       
+28        2              0.093465       4              0.230233       
+29        1              0.093589       4              0.212732       
+30        2              0.087094       4              0.218750       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.30, Média de Conflitos (GA4): 3.80
+Média de Tempo (SA): 0.106768 s, Média de Tempo (GA4): 0.227488 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 4.5, p-valor = 6.798498320790018e-12
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 12:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         2              0.109724       3              0.210249       
+2         1              0.143781       5              0.218080       
+3         2              0.096586       4              0.230371       
+4         1              0.134853       3              0.224121       
+5         1              0.117539       4              0.218178       
+6         1              0.153546       5              0.225761       
+7         1              0.120909       4              0.223445       
+8         1              0.121461       5              0.212545       
+9         1              0.097521       4              0.220132       
+10        1              0.170767       5              0.218343       
+11        1              0.159462       5              0.216505       
+12        2              0.084414       4              0.259690       
+13        1              0.119689       4              0.211866       
+14        1              0.138743       3              0.227226       
+15        2              0.098650       4              0.208934       
+16        2              0.110938       4              0.220797       
+17        2              0.114351       4              0.214422       
+18        1              0.121522       5              0.211151       
+19        2              0.082029       3              0.210447       
+20        2              0.084822       4              0.209504       
+21        1              0.094568       4              0.223287       
+22        2              0.086530       4              0.209881       
+23        2              0.088222       3              0.228596       
+24        1              0.089899       3              0.209328       
+25        0              0.020352       3              0.213321       
+26        1              0.091198       3              0.209913       
+27        2              0.095515       3              0.215044       
+28        2              0.088246       4              0.209463       
+29        2              0.079998       4              0.208809       
+30        2              0.103334       4              0.222285       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.43, Média de Conflitos (GA4): 3.90
+Média de Tempo (SA): 0.107306 s, Média de Tempo (GA4): 0.218056 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 0.0, p-valor = 9.670612086206555e-12
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 13:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         0              0.092645       4              0.209492       
+2         1              0.161756       4              0.210452       
+3         1              0.138048       5              0.210942       
+4         1              0.101547       4              0.211422       
+5         2              0.099598       4              0.215998       
+6         2              0.096915       3              0.221215       
+7         1              0.151810       3              0.239345       
+8         1              0.194449       5              0.209401       
+9         2              0.113204       4              0.208715       
+10        1              0.169304       2              0.209354       
+11        2              0.113670       5              0.219892       
+12        1              0.106836       4              0.222183       
+13        1              0.133926       4              0.232894       
+14        2              0.085550       3              0.209690       
+15        2              0.079763       5              0.209867       
+16        1              0.092825       5              0.209608       
+17        2              0.109164       4              0.208552       
+18        1              0.095341       3              0.208898       
+19        2              0.094789       4              0.208579       
+20        1              0.155849       4              0.218310       
+21        1              0.150768       5              0.218773       
+22        1              0.088472       4              0.228113       
+23        2              0.084165       5              0.209097       
+24        1              0.167858       4              0.208777       
+25        1              0.084828       4              0.207762       
+26        2              0.087029       4              0.219883       
+27        2              0.101435       4              0.207101       
+28        2              0.093593       4              0.207339       
+29        1              0.134774       4              0.208586       
+30        2              0.079725       5              0.207942       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.40, Média de Conflitos (GA4): 4.07
+Média de Tempo (SA): 0.115321 s, Média de Tempo (GA4): 0.213939 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 6.5, p-valor = 1.5418949600642107e-11
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 14:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         2              0.098922       5              0.207301       
+2         2              0.083037       4              0.206333       
+3         1              0.084718       4              0.225572       
+4         1              0.096769       4              0.211222       
+5         2              0.079662       3              0.212514       
+6         2              0.118457       4              0.208753       
+7         0              0.079330       5              0.211351       
+8         2              0.109559       2              0.211329       
+9         2              0.112916       4              0.211769       
+10        1              0.097885       4              0.219387       
+11        1              0.122751       4              0.207075       
+12        1              0.149650       5              0.209308       
+13        2              0.098198       5              0.207664       
+14        1              0.100199       5              0.206915       
+15        1              0.093552       2              0.207884       
+16        1              0.182398       3              0.222823       
+17        2              0.087409       2              0.225883       
+18        2              0.103841       4              0.211997       
+19        1              0.144319       4              0.211857       
+20        1              0.166029       4              0.207316       
+21        2              0.097940       4              0.207024       
+22        2              0.111692       4              0.209599       
+23        1              0.135820       4              0.210611       
+24        2              0.089557       2              0.209085       
+25        1              0.101733       4              0.206350       
+26        1              0.121268       4              0.207425       
+27        1              0.144626       5              0.206222       
+28        2              0.086747       4              0.210979       
+29        1              0.125345       4              0.207193       
+30        1              0.109610       4              0.218519       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.40, Média de Conflitos (GA4): 3.87
+Média de Tempo (SA): 0.111131 s, Média de Tempo (GA4): 0.211242 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 26.0, p-valor = 8.538624000748123e-11
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 15:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         1              0.106916       4              0.224084       
+2         2              0.089763       5              0.211797       
+3         2              0.101223       4              0.208609       
+4         2              0.088812       5              0.206345       
+5         1              0.182810       4              0.207427       
+6         1              0.153769       3              0.205781       
+7         2              0.084929       3              0.221203       
+8         1              0.126442       5              0.206639       
+9         1              0.115828       5              0.212220       
+10        2              0.094208       5              0.210491       
+11        2              0.084571       4              0.209774       
+12        1              0.085140       3              0.235759       
+13        1              0.110274       4              0.207056       
+14        2              0.098766       3              0.212797       
+15        2              0.081548       3              0.207186       
+16        2              0.111229       5              0.240029       
+17        1              0.150551       3              0.224558       
+18        1              0.128144       3              0.215011       
+19        1              0.136935       4              0.254908       
+20        2              0.093699       4              0.238461       
+21        1              0.126660       4              0.233482       
+22        1              0.145214       4              0.219735       
+23        1              0.088859       3              0.235753       
+24        1              0.165557       3              0.215850       
+25        1              0.130484       5              0.219383       
+26        1              0.119902       4              0.238724       
+27        1              0.158364       3              0.221245       
+28        1              0.134307       3              0.241187       
+29        2              0.094870       4              0.213238       
+30        1              0.111534       5              0.208824       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.37, Média de Conflitos (GA4): 3.90
+Média de Tempo (SA): 0.116710 s, Média de Tempo (GA4): 0.220252 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 0.0, p-valor = 8.690099812450856e-12
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 16:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         2              0.083541       3              0.217554       
+2         1              0.125341       4              0.240838       
+3         1              0.146837       3              0.217273       
+4         1              0.118876       5              0.216660       
+5         1              0.096959       4              0.216162       
+6         1              0.136161       4              0.222640       
+7         1              0.135391       5              0.211753       
+8         1              0.091711       3              0.212823       
+9         1              0.130585       4              0.240102       
+10        2              0.085523       4              0.215465       
+11        1              0.171702       4              0.209567       
+12        1              0.085838       4              0.219806       
+13        2              0.085043       5              0.207485       
+14        1              0.128194       4              0.213343       
+15        1              0.165571       5              0.237153       
+16        2              0.082200       3              0.208495       
+17        1              0.136343       5              0.228314       
+18        1              0.144919       4              0.217748       
+19        1              0.119715       4              0.213878       
+20        1              0.117689       5              0.210455       
+21        2              0.116980       3              0.206977       
+22        2              0.087022       4              0.218563       
+23        1              0.101350       4              0.211997       
+24        1              0.163388       4              0.213907       
+25        2              0.099066       3              0.207380       
+26        2              0.086219       3              0.208889       
+27        1              0.089137       4              0.208637       
+28        2              0.099990       4              0.220373       
+29        2              0.107903       4              0.233307       
+30        2              0.104107       3              0.213979       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.37, Média de Conflitos (GA4): 3.93
+Média de Tempo (SA): 0.114777 s, Média de Tempo (GA4): 0.217384 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 0.0, p-valor = 7.162661461018585e-12
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 17:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         2              0.097284       4              0.250145       
+2         2              0.137634       5              0.221072       
+3         1              0.092730       4              0.217561       
+4         1              0.136877       5              0.269073       
+5         1              0.183065       4              0.225112       
+6         2              0.095083       4              0.230880       
+7         2              0.086817       3              0.266561       
+8         1              0.095116       4              0.282676       
+9         1              0.148374       2              0.219324       
+10        2              0.091862       4              0.224944       
+11        1              0.173102       4              0.301934       
+12        1              0.166903       3              0.250237       
+13        1              0.133434       4              0.240127       
+14        2              0.110906       4              0.255838       
+15        1              0.150314       4              0.249168       
+16        2              0.104577       5              0.231071       
+17        2              0.110375       3              0.214585       
+18        2              0.088962       4              0.210809       
+19        1              0.111733       3              0.212646       
+20        1              0.137391       4              0.209353       
+21        1              0.107418       3              0.210781       
+22        1              0.141924       4              0.228097       
+23        2              0.085073       2              0.244524       
+24        2              0.086607       3              0.219765       
+25        2              0.099308       3              0.217291       
+26        2              0.089660       4              0.207506       
+27        2              0.097647       3              0.208730       
+28        2              0.085931       5              0.208205       
+29        1              0.125514       4              0.208972       
+30        1              0.189002       4              0.224387       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.50, Média de Conflitos (GA4): 3.73
+Média de Tempo (SA): 0.118687 s, Média de Tempo (GA4): 0.232046 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 15.0, p-valor = 3.478189805561215e-11
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 18:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         1              0.094963       3              0.217615       
+2         1              0.126307       3              0.207489       
+3         1              0.126985       3              0.207662       
+4         1              0.176768       4              0.211524       
+5         1              0.133330       4              0.207813       
+6         2              0.083246       4              0.208390       
+7         2              0.092347       5              0.214322       
+8         2              0.083153       3              0.207329       
+9         1              0.104341       5              0.210223       
+10        1              0.149984       4              0.209390       
+11        2              0.079390       4              0.213440       
+12        1              0.156064       4              0.207543       
+13        2              0.083353       5              0.216605       
+14        0              0.007083       3              0.214901       
+15        2              0.087915       4              0.206598       
+16        2              0.099104       4              0.216607       
+17        1              0.117406       3              0.206934       
+18        1              0.127708       3              0.208834       
+19        2              0.108980       3              0.206980       
+20        1              0.129288       5              0.218504       
+21        1              0.149432       4              0.240485       
+22        1              0.173185       4              0.252899       
+23        1              0.154932       4              0.260484       
+24        2              0.101657       4              0.255961       
+25        2              0.094746       4              0.214144       
+26        2              0.092306       3              0.227164       
+27        2              0.081290       4              0.212109       
+28        2              0.088010       4              0.207782       
+29        1              0.114003       4              0.210630       
+30        1              0.088380       4              0.210056       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.40, Média de Conflitos (GA4): 3.83
+Média de Tempo (SA): 0.110188 s, Média de Tempo (GA4): 0.217014 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 0.0, p-valor = 8.069098358365773e-12
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 19:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         2              0.091675       2              0.208414       
+2         2              0.099146       5              0.209074       
+3         1              0.153267       4              0.221607       
+4         1              0.113075       4              0.220522       
+5         2              0.093041       4              0.248358       
+6         2              0.091065       3              0.223679       
+7         1              0.153427       3              0.299803       
+8         1              0.121963       4              0.320369       
+9         1              0.131731       5              0.283501       
+10        1              0.144221       4              0.258125       
+11        1              0.108622       4              0.281120       
+12        1              0.101148       4              0.265625       
+13        2              0.101621       4              0.229998       
+14        1              0.135117       4              0.286027       
+15        1              0.125276       4              0.238365       
+16        1              0.164055       4              0.253466       
+17        2              0.102534       4              0.226746       
+18        2              0.089311       3              0.215195       
+19        2              0.088640       4              0.220846       
+20        2              0.081938       3              0.213397       
+21        1              0.089393       4              0.222264       
+22        1              0.083757       4              0.218674       
+23        2              0.091473       4              0.216984       
+24        2              0.092505       4              0.219784       
+25        2              0.086854       3              0.210482       
+26        1              0.087702       4              0.215133       
+27        1              0.097636       4              0.226414       
+28        2              0.081443       4              0.223496       
+29        1              0.153824       4              0.215468       
+30        1              0.134648       5              0.215008       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.43, Média de Conflitos (GA4): 3.87
+Média de Tempo (SA): 0.109670 s, Média de Tempo (GA4): 0.236931 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 6.5, p-valor = 8.867984617050371e-12
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 20:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         2              0.115654       2              0.217541       
+2         1              0.090372       4              0.220969       
+3         1              0.104479       4              0.217338       
+4         1              0.114069       4              0.221696       
+5         1              0.177239       3              0.243655       
+6         2              0.095289       5              0.236328       
+7         1              0.130119       5              0.226826       
+8         1              0.096306       4              0.224174       
+9         2              0.088519       3              0.221698       
+10        1              0.142233       5              0.221564       
+11        1              0.145726       4              0.236344       
+12        1              0.104106       2              0.250441       
+13        1              0.142338       4              0.221059       
+14        2              0.083503       5              0.224332       
+15        1              0.161259       4              0.228696       
+16        2              0.099294       3              0.223587       
+17        1              0.096522       4              0.231309       
+18        1              0.098137       4              0.271005       
+19        2              0.101262       3              0.223974       
+20        2              0.090591       4              0.249713       
+21        2              0.101541       3              0.228424       
+22        2              0.082974       3              0.216493       
+23        1              0.122397       3              0.222398       
+24        1              0.087580       5              0.222969       
+25        2              0.081853       4              0.221432       
+26        2              0.094168       4              0.219356       
+27        1              0.091069       5              0.218657       
+28        1              0.141117       2              0.217405       
+29        1              0.121387       1              0.223656       
+30        2              0.088812       3              0.257272       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.40, Média de Conflitos (GA4): 3.63
+Média de Tempo (SA): 0.109664 s, Média de Tempo (GA4): 0.228677 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 39.0, p-valor = 3.9834300702132283e-10
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 21:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         1              0.094178       4              0.250123       
+2         1              0.206500       5              0.302770       
+3         2              0.110935       5              0.234295       
+4         2              0.096342       4              0.235153       
+5         1              0.151119       4              0.235200       
+6         1              0.110578       4              0.256612       
+7         1              0.114886       4              0.237903       
+8         2              0.090267       3              0.234063       
+9         2              0.101742       4              0.248382       
+10        0              0.057022       3              0.238151       
+11        2              0.118709       5              0.240466       
+12        1              0.171921       3              0.246211       
+13        2              0.094076       3              0.229675       
+14        2              0.094691       3              0.256309       
+15        1              0.207691       3              0.234268       
+16        2              0.120157       4              0.219230       
+17        1              0.121088       4              0.229205       
+18        1              0.101530       3              0.215139       
+19        2              0.095330       3              0.220325       
+20        2              0.096658       4              0.220033       
+21        2              0.081725       4              0.215955       
+22        1              0.086448       4              0.219946       
+23        2              0.086205       3              0.218478       
+24        2              0.106936       4              0.214428       
+25        1              0.156607       5              0.222439       
+26        1              0.114801       4              0.217687       
+27        1              0.082937       4              0.213550       
+28        2              0.090259       3              0.212851       
+29        1              0.169156       5              0.215183       
+30        1              0.084951       4              0.218672       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.43, Média de Conflitos (GA4): 3.83
+Média de Tempo (SA): 0.113848 s, Média de Tempo (GA4): 0.231757 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 0.0, p-valor = 9.472001525935822e-12
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 22:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         1              0.086164       4              0.213444       
+2         1              0.128480       4              0.226447       
+3         1              0.119829       4              0.214676       
+4         1              0.120406       4              0.216330       
+5         1              0.159033       5              0.219637       
+6         2              0.091741       5              0.212665       
+7         1              0.120364       3              0.215191       
+8         2              0.097366       5              0.213234       
+9         2              0.109954       3              0.218804       
+10        1              0.107409       4              0.214586       
+11        1              0.134816       4              0.219537       
+12        2              0.089530       4              0.213371       
+13        2              0.105436       4              0.211847       
+14        2              0.093188       4              0.216369       
+15        2              0.093386       5              0.220556       
+16        1              0.129663       4              0.215585       
+17        2              0.096371       3              0.248472       
+18        2              0.120886       3              0.217147       
+19        2              0.084985       3              0.212698       
+20        1              0.166623       4              0.213388       
+21        2              0.092015       4              0.213136       
+22        1              0.118516       4              0.226398       
+23        2              0.080182       4              0.287754       
+24        1              0.167199       4              0.252098       
+25        1              0.124707       4              0.248472       
+26        1              0.155087       3              0.266409       
+27        1              0.112865       5              0.231016       
+28        1              0.151063       4              0.243296       
+29        1              0.097409       5              0.302449       
+30        2              0.120320       4              0.277683       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.43, Média de Conflitos (GA4): 4.00
+Média de Tempo (SA): 0.115833 s, Média de Tempo (GA4): 0.230090 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 0.0, p-valor = 6.864012373981409e-12
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 23:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         2              0.090636       4              0.233150       
+2         1              0.129683       4              0.253392       
+3         1              0.164367       4              0.276092       
+4         2              0.115911       4              0.236757       
+5         1              0.101473       3              0.249087       
+6         1              0.197531       3              0.279828       
+7         1              0.212084       5              0.244880       
+8         1              0.179443       4              0.318216       
+9         1              0.160576       5              0.245760       
+10        1              0.094836       6              0.235651       
+11        1              0.170974       4              0.292053       
+12        2              0.086555       3              0.238124       
+13        1              0.091444       5              0.236003       
+14        1              0.120777       5              0.254470       
+15        2              0.103092       3              0.262158       
+16        1              0.108229       1              0.238342       
+17        1              0.120817       5              0.232940       
+18        2              0.100742       3              0.234190       
+19        1              0.177825       4              0.250277       
+20        1              0.143150       3              0.267781       
+21        2              0.101515       3              0.233809       
+22        1              0.101305       5              0.230718       
+23        2              0.087920       3              0.225155       
+24        1              0.097437       3              0.227234       
+25        1              0.102990       2              0.226048       
+26        2              0.088881       4              0.227724       
+27        2              0.098476       4              0.264724       
+28        1              0.190259       4              0.224429       
+29        1              0.128303       4              0.248276       
+30        2              0.116518       4              0.233980       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.33, Média de Conflitos (GA4): 3.80
+Média de Tempo (SA): 0.126125 s, Média de Tempo (GA4): 0.247375 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 25.0, p-valor = 9.345792134382967e-11
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 24:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         2              0.095319       4              0.232742       
+2         1              0.147747       2              0.227251       
+3         1              0.196531       4              0.228570       
+4         1              0.124985       2              0.250925       
+5         2              0.086016       4              0.224737       
+6         1              0.139430       5              0.237570       
+7         1              0.162787       4              0.229187       
+8         2              0.083148       4              0.214840       
+9         2              0.088429       4              0.218477       
+10        1              0.110276       3              0.215917       
+11        1              0.135875       4              0.214727       
+12        1              0.109357       3              0.213974       
+13        1              0.086961       3              0.216761       
+14        1              0.096136       4              0.213583       
+15        2              0.091899       4              0.223037       
+16        0              0.046796       4              0.219720       
+17        1              0.106638       5              0.214284       
+18        2              0.082312       5              0.214873       
+19        1              0.112974       4              0.214883       
+20        1              0.091077       3              0.219075       
+21        1              0.121113       4              0.214358       
+22        2              0.095547       4              0.221627       
+23        2              0.083866       4              0.214820       
+24        2              0.091629       4              0.213348       
+25        1              0.095376       3              0.213374       
+26        1              0.153828       4              0.229122       
+27        1              0.092318       4              0.214180       
+28        0              0.070261       5              0.212441       
+29        1              0.135401       3              0.222991       
+30        1              0.110537       4              0.213331       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.23, Média de Conflitos (GA4): 3.80
+Média de Tempo (SA): 0.108152 s, Média de Tempo (GA4): 0.220491 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 9.0, p-valor = 1.5983375073489355e-11
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 25:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         1              0.124110       4              0.214222       
+2         1              0.110434       4              0.220099       
+3         1              0.112194       3              0.215174       
+4         1              0.136931       4              0.216234       
+5         1              0.131280       4              0.215222       
+6         1              0.137024       5              0.220093       
+7         2              0.085907       4              0.215855       
+8         2              0.085144       4              0.219902       
+9         1              0.130229       5              0.217898       
+10        1              0.082492       4              0.216457       
+11        1              0.111039       4              0.214631       
+12        2              0.089032       3              0.239018       
+13        2              0.082769       4              0.216008       
+14        1              0.140082       4              0.212807       
+15        2              0.111151       5              0.217335       
+16        1              0.139440       4              0.212558       
+17        2              0.121696       4              0.213247       
+18        1              0.134779       4              0.245011       
+19        1              0.160987       3              0.219426       
+20        2              0.083868       3              0.214060       
+21        1              0.170624       3              0.217106       
+22        1              0.102247       3              0.213638       
+23        1              0.094357       3              0.214361       
+24        1              0.156670       4              0.213788       
+25        2              0.084918       5              0.225275       
+26        2              0.125470       4              0.213906       
+27        1              0.103399       4              0.216637       
+28        0              0.040555       5              0.228919       
+29        1              0.091857       4              0.213813       
+30        1              0.164363       5              0.214063       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.27, Média de Conflitos (GA4): 3.97
+Média de Tempo (SA): 0.114835 s, Média de Tempo (GA4): 0.218225 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 0.0, p-valor = 6.219971412775901e-12
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 26:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         1              0.096438       4              0.212793       
+2         1              0.094558       4              0.225074       
+3         1              0.145805       4              0.218896       
+4         1              0.100572       4              0.217576       
+5         1              0.110046       4              0.214812       
+6         1              0.105020       4              0.215288       
+7         1              0.114094       4              0.216771       
+8         2              0.107452       4              0.226428       
+9         1              0.116246       4              0.216042       
+10        2              0.100483       4              0.220536       
+11        1              0.092659       4              0.214987       
+12        1              0.163423       4              0.213161       
+13        2              0.085423       4              0.215759       
+14        2              0.088198       3              0.216681       
+15        1              0.098057       2              0.225464       
+16        1              0.124149       4              0.220389       
+17        2              0.088023       4              0.219046       
+18        1              0.136147       4              0.213816       
+19        2              0.084690       4              0.214092       
+20        1              0.087046       4              0.213555       
+21        1              0.146788       2              0.214612       
+22        1              0.154709       4              0.223423       
+23        0              0.084613       3              0.213451       
+24        1              0.110532       4              0.247454       
+25        2              0.084153       4              0.214517       
+26        2              0.097991       3              0.213336       
+27        1              0.155574       5              0.216073       
+28        1              0.107641       4              0.230051       
+29        2              0.098374       3              0.218051       
+30        1              0.129790       4              0.213870       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.27, Média de Conflitos (GA4): 3.77
+Média de Tempo (SA): 0.110290 s, Média de Tempo (GA4): 0.218533 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 9.0, p-valor = 6.732055531283419e-12
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 27:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         2              0.099810       3              0.215200       
+2         1              0.147812       3              0.252072       
+3         2              0.093404       4              0.233261       
+4         1              0.097637       4              0.238420       
+5         1              0.088818       2              0.245824       
+6         2              0.092000       4              0.231519       
+7         1              0.119266       4              0.264251       
+8         2              0.090190       4              0.240591       
+9         2              0.091199       4              0.231663       
+10        2              0.112166       4              0.235009       
+11        2              0.091574       5              0.263935       
+12        2              0.084965       4              0.225766       
+13        2              0.090774       3              0.225657       
+14        2              0.086662       4              0.246855       
+15        1              0.168535       4              0.240179       
+16        1              0.095992       4              0.219116       
+17        1              0.090422       4              0.276387       
+18        1              0.140525       4              0.250023       
+19        2              0.115701       3              0.230754       
+20        1              0.126063       3              0.248730       
+21        0              0.040365       4              0.252355       
+22        2              0.098171       3              0.243923       
+23        1              0.131710       4              0.225197       
+24        2              0.107002       3              0.245182       
+25        0              0.012243       4              0.250844       
+26        1              0.129879       3              0.222738       
+27        2              0.107352       5              0.214041       
+28        1              0.088624       4              0.217363       
+29        1              0.107507       2              0.212940       
+30        1              0.138002       4              0.223754       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.40, Média de Conflitos (GA4): 3.67
+Média de Tempo (SA): 0.102812 s, Média de Tempo (GA4): 0.237452 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 14.0, p-valor = 3.054233835122263e-11
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 28:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         2              0.113133       4              0.240289       
+2         2              0.101116       4              0.233381       
+3         2              0.111588       4              0.241761       
+4         1              0.108561       3              0.256383       
+5         1              0.130529       4              0.236735       
+6         2              0.092981       3              0.245393       
+7         1              0.150372       4              0.228028       
+8         1              0.090237       5              0.224625       
+9         1              0.101396       5              0.231018       
+10        1              0.121871       4              0.252835       
+11        1              0.202550       4              0.217615       
+12        2              0.092115       4              0.215850       
+13        1              0.135211       4              0.215117       
+14        2              0.092962       4              0.214580       
+15        2              0.090360       5              0.271742       
+16        1              0.170064       5              0.224958       
+17        1              0.145128       5              0.217959       
+18        1              0.092952       5              0.226508       
+19        2              0.114660       4              0.226252       
+20        2              0.085436       4              0.219892       
+21        2              0.083873       4              0.224211       
+22        1              0.095131       3              0.249421       
+23        2              0.090932       5              0.235279       
+24        2              0.092981       4              0.280007       
+25        1              0.097811       5              0.242567       
+26        1              0.103428       5              0.224135       
+27        1              0.156819       3              0.225406       
+28        1              0.100974       5              0.235198       
+29        1              0.103435       3              0.253102       
+30        1              0.137303       4              0.245597       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.40, Média de Conflitos (GA4): 4.17
+Média de Tempo (SA): 0.113530 s, Média de Tempo (GA4): 0.235195 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 0.0, p-valor = 8.012665822326517e-12
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 29:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         2              0.088819       4              0.252573       
+2         2              0.114915       4              0.246308       
+3         1              0.187499       4              0.287353       
+4         1              0.090338       4              0.270565       
+5         2              0.107849       4              0.228308       
+6         1              0.126185       4              0.243601       
+7         1              0.109085       4              0.222850       
+8         1              0.161006       3              0.237020       
+9         2              0.112114       3              0.221566       
+10        1              0.088784       3              0.227629       
+11        1              0.134385       5              0.221820       
+12        2              0.092512       3              0.220686       
+13        2              0.088717       4              0.227386       
+14        2              0.085793       4              0.224688       
+15        1              0.092475       5              0.217978       
+16        2              0.085771       5              0.220806       
+17        1              0.089558       3              0.234486       
+18        1              0.169502       4              0.221129       
+19        2              0.091046       3              0.265762       
+20        1              0.152098       4              0.220917       
+21        1              0.098620       4              0.219816       
+22        2              0.099274       4              0.220889       
+23        1              0.108556       4              0.220447       
+24        1              0.113891       5              0.222039       
+25        2              0.085032       4              0.256219       
+26        1              0.190150       4              0.293910       
+27        1              0.124650       5              0.246733       
+28        1              0.141940       3              0.265108       
+29        1              0.150005       5              0.215634       
+30        1              0.106564       3              0.217319       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.37, Média de Conflitos (GA4): 3.93
+Média de Tempo (SA): 0.116238 s, Média de Tempo (GA4): 0.236385 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 0.0, p-valor = 7.162661461018585e-12
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
+
+Resultados para a Configuração de Tabuleiro 30:
+Resultados das 30 Execuções:
+Execução  Conflitos SA   Tempo SA (s)   Conflitos GA4  Tempo GA4 (s)  
+1         1              0.101194       4              0.212259       
+2         1              0.156445       4              0.222368       
+3         1              0.128686       5              0.235220       
+4         2              0.095898       5              0.231332       
+5         1              0.082598       4              0.256687       
+6         0              0.120607       4              0.267067       
+7         1              0.147258       4              0.220813       
+8         1              0.149859       3              0.225799       
+9         1              0.156447       4              0.224705       
+10        2              0.097622       5              0.233452       
+11        1              0.145002       4              0.263449       
+12        1              0.100944       5              0.238832       
+13        1              0.086677       4              0.261652       
+14        1              0.211133       4              0.238668       
+15        1              0.091211       4              0.239392       
+16        2              0.091112       4              0.221478       
+17        2              0.083303       4              0.249943       
+18        1              0.155547       4              0.239515       
+19        1              0.134786       4              0.224329       
+20        2              0.116108       4              0.224341       
+21        2              0.090927       3              0.231684       
+22        1              0.119549       2              0.239197       
+23        1              0.109086       3              0.213537       
+24        0              0.065244       3              0.214111       
+25        1              0.147793       5              0.213767       
+26        1              0.119883       4              0.238401       
+27        1              0.119644       5              0.225732       
+28        1              0.131588       3              0.213576       
+29        2              0.087504       4              0.213256       
+30        1              0.125782       4              0.230587       
+
+Estatísticas Gerais:
+Média de Conflitos (SA): 1.17, Média de Conflitos (GA4): 3.97
+Média de Tempo (SA): 0.118981 s, Média de Tempo (GA4): 0.232172 s
+
+Teste Mann-Whitney para Conflitos:
+Estatística = 3.5, p-valor = 7.344110115904546e-12
+Diferença estatisticamente significativa para conflitos.
+
+Teste Mann-Whitney para Tempos:
+Estatística = 0.0, p-valor = 3.019859359162157e-11
+Diferença estatisticamente significativa para tempos.
