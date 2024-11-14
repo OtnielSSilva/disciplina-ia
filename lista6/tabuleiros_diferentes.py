@@ -69,7 +69,7 @@ def imprimir_tabuleiro(tabuleiro):
 def simulated_annealing(n):
     temperatura_inicial = 2500.0
     temperatura = temperatura_inicial
-    resfriamento = 0.99
+    resfriamento = 0.985
     max_iteracoes = 100000
     limite_iteracoes_sem_melhoria = 1000
 

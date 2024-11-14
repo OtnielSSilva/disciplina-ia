@@ -4,13 +4,11 @@ import numpy as np
 import time
 from scipy.stats import mannwhitneyu
 
-# Parâmetros fixos para Simulated Annealing
-TEMPERATURA_INICIAL = 2228.7334309974863
-TAXA_RESFRIAMENTO = 0.99879992813009228
+TEMPERATURA_INICIAL = 3500
+TAXA_RESFRIAMENTO = 0.998
 N_QUEENS = 16
 MAX_FITNESS = int(N_QUEENS * (N_QUEENS - 1) / 2)
 
-# Parâmetros de otimização
 TEMPERATURA_MINIMA = 0.1
 ITERACOES_POR_TEMPERATURA = 100
 ITERACOES_SEM_MELHORIA_MAX = 1000
@@ -62,10 +60,6 @@ def gerar_vizinho(tabuleiro):
 
 
 def simulated_annealing(tabuleiro):
-    """
-    Implementação aprimorada do Algoritmo de Simulated Annealing para o problema das N-Rainhas,
-    utilizando o tabuleiro inicial fornecido.
-    """
     temperatura = TEMPERATURA_INICIAL
     tabuleiro_atual = tabuleiro.copy()  # Inicia com o tabuleiro recebido
     conflitos_atual = calcular_conflitos(tabuleiro_atual)
@@ -158,7 +152,7 @@ def order_crossover(parent1, parent2):
 
 
 # Número de configurações iniciais
-NUM_INITIAL_BOARDS = 30  # Você pode ajustar esse número conforme necessário
+NUM_INITIAL_BOARDS = 30
 
 # Gera as configurações iniciais
 initial_boards = [create_individual(N_QUEENS)
@@ -174,7 +168,6 @@ for idx, initial_board in enumerate(initial_boards):
     genetic_times = []
 
     for i in range(30):
-        # Cria cópias do tabuleiro inicial
         board_for_sa = initial_board.copy()
         board_for_ga4 = initial_board.copy()
 
@@ -211,9 +204,7 @@ for idx, initial_board in enumerate(initial_boards):
         'p_value_times': p_value_times
     })
 
-# Agora, podemos gerar o relatório de resultados
 
-# Exemplo de saída formatada
 output = []
 
 for res in results:
