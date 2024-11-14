@@ -153,9 +153,9 @@ def genetic_algorithm_4(pop_size, generations, elitism_count=2, tournament_size=
             best_fitness = current_best_fitness
 
         # Debug: Print progresso a cada 10 gerações
-        if (generation + 1) % 10 == 0 or generation == 0:
-            print(
-                f"Geração {generation + 1}: Melhor Fitness = {current_best_fitness}")
+        # if (generation + 1) % 10 == 0 or generation == 0:
+        #     print(
+        #         f"Geração {generation + 1}: Melhor Fitness = {current_best_fitness}")
 
     # Retorna o número de conflitos do melhor indivíduo
     return MAX_FITNESS - best_fitness
@@ -279,7 +279,7 @@ output.append("Diferença estatisticamente significativa para tempos.\n" if p_va
               0.05 else "Nenhuma diferença significativa para tempos.\n")
 
 # Salvar em arquivo
-with open("resultados_analise_detalhada_diferentes.txt", "w") as file:
+with open("resultados_analise_detalhada_diferentes2.txt", "w") as file:
     file.writelines(output)
 
-print("Análise detalhada salva em 'resultados_analise_detalhada_diferentes.txt'")
+print("Análise detalhada salva em 'resultados_analise_detalhada_diferentes2.txt'")

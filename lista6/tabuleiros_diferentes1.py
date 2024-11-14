@@ -4,52 +4,32 @@ import numpy as np
 import time
 from scipy.stats import mannwhitneyu
 
-# Funções auxiliares para o algoritmo de Simulated Annealing
+# Função para calcular o número de conflitos entre rainhas
 
 
-def calcular_conflitos(tabuleiro):
-    n = len(tabuleiro)
+def conflito(tabuleiro):
     conflitos = 0
-    linhas = [0] * n
-    diag_principal = [0] * (2 * n - 1)
-    diag_secundaria = [0] * (2 * n - 1)
-
+    n = len(tabuleiro)
     for i in range(n):
-        linhas[tabuleiro[i]] += 1
-        diag_principal[i + tabuleiro[i]] += 1
-        diag_secundaria[n - 1 - i + tabuleiro[i]] += 1
-
-    for i in range(2 * n - 1):
-        if diag_principal[i] > 1:
-            conflitos += diag_principal[i] - 1
-        if diag_secundaria[i] > 1:
-            conflitos += diag_secundaria[i] - 1
-
-    for i in range(n):
-        if linhas[i] > 1:
-            conflitos += linhas[i] - 1
-
+        for j in range(i+1, n):
+            if tabuleiro[i] == tabuleiro[j]:
+                conflitos += 1
+            elif abs(tabuleiro[i] - tabuleiro[j]) == j - i:
+                conflitos += 1
     return conflitos
+
+# Função para gerar um vizinho, alterando a posição de uma rainha aleatoriamente
 
 
 def gerar_vizinho(tabuleiro):
     n = len(tabuleiro)
-    coluna = random.randint(0, n - 1)
-    melhor_linha = tabuleiro[coluna]
-    menor_conflito = float('inf')
-
-    for linha in range(n):
-        if linha != tabuleiro[coluna]:
-            novo_tabuleiro = tabuleiro.copy()
-            novo_tabuleiro[coluna] = linha
-            conflitos = calcular_conflitos(novo_tabuleiro)
-            if conflitos < menor_conflito:
-                menor_conflito = conflitos
-                melhor_linha = linha
-
     vizinho = tabuleiro.copy()
-    vizinho[coluna] = melhor_linha
+    coluna = random.randint(0, n - 1)
+    nova_linha = random.randint(0, n - 1)
+    vizinho[coluna] = nova_linha
     return vizinho
+
+# Função para imprimir o tabuleiro e o número de conflitos
 
 
 def imprimir_tabuleiro(tabuleiro):
@@ -58,57 +38,44 @@ def imprimir_tabuleiro(tabuleiro):
         linha = ''
         for j in range(n):
             if tabuleiro[j] == i:
-                linha += 'Q '
+                linha += 'X '
             else:
                 linha += '. '
         print(linha)
-    print("Conflitos:", calcular_conflitos(tabuleiro))
+    print("Conflitos:", conflito(tabuleiro))
     print("--------")
+
+# Implementação do algoritmo de Simulated Annealing para o problema das N-Rainhas
 
 
 def simulated_annealing(n):
-    temperatura_inicial = 2500.0
-    temperatura = temperatura_inicial
-    resfriamento = 0.99
-    max_iteracoes = 100000
-    limite_iteracoes_sem_melhoria = 1000
-
-    # Inicialização do tabuleiro com uma permutação aleatória sem conflitos nas linhas
-    tabuleiro_atual = list(range(n))
-    random.shuffle(tabuleiro_atual)
-    conflitos_atual = calcular_conflitos(tabuleiro_atual)
+    temperatura = 4500
+    resfriamento = 0.998
+    tabuleiro_atual = [random.randint(0, n - 1) for _ in range(n)]
+    conflitos_atual = conflito(tabuleiro_atual)
     melhor_tabuleiro = tabuleiro_atual.copy()
     menor_conflito = conflitos_atual
     iteracao = 0
-    iteracoes_sem_melhoria = 0
+    max_iteracoes = 10000
+    impressoes = 0  # Contador para limitar o número de prints
 
     while conflitos_atual > 0 and temperatura > 0.1 and iteracao < max_iteracoes:
         tabuleiro_vizinho = gerar_vizinho(tabuleiro_atual)
-        conflitos_vizinho = calcular_conflitos(tabuleiro_vizinho)
+        conflitos_vizinho = conflito(tabuleiro_vizinho)
         delta = conflitos_vizinho - conflitos_atual
+
+        # Imprime o processo até 2 vezes
+        # if impressoes < 2:
+        #     print(f"Iteração {iteracao}")
+        #     imprimir_tabuleiro(tabuleiro_vizinho)
+        #     impressoes += 1
 
         if delta < 0 or random.uniform(0, 1) < math.exp(-delta / temperatura):
             tabuleiro_atual = tabuleiro_vizinho
             conflitos_atual = conflitos_vizinho
-
-            # Verifica se encontrou um tabuleiro com menos conflitos
             if conflitos_atual < menor_conflito:
                 melhor_tabuleiro = tabuleiro_atual.copy()
                 menor_conflito = conflitos_atual
-                iteracoes_sem_melhoria = 0  # Reinicia o contador de iterações sem melhoria
-            else:
-                iteracoes_sem_melhoria += 1
-        else:
-            iteracoes_sem_melhoria += 1
-
-        # Verifica se deve reiniciar o tabuleiro
-        if iteracoes_sem_melhoria >= limite_iteracoes_sem_melhoria:
-            tabuleiro_atual = list(range(n))
-            random.shuffle(tabuleiro_atual)
-            conflitos_atual = calcular_conflitos(tabuleiro_atual)
-            iteracoes_sem_melhoria = 0
-            # temperatura = temperatura_inicial  # Opcional: Reinicia a temperatura
-
         temperatura *= resfriamento
         iteracao += 1
 
@@ -125,7 +92,7 @@ def create_individual(n):
 
 
 def fitness(individual):
-    return MAX_FITNESS - calcular_conflitos(individual)
+    return MAX_FITNESS - conflito(individual)
 
 
 def swap_mutation(individual):
@@ -229,7 +196,7 @@ stat_times, p_value_times = mannwhitneyu(
     simulated_times, genetic_times, alternative="two-sided")
 
 # Resultados formatados para cada iteração e estatísticas finais
-output = ["Resultados das 50 Iterações:\n"]
+output = ["Resultados das Iterações:\n"]
 output.append(
     f"{'Iteração':<10}{'Conflitos SA':<15}{'Tempo SA (s)':<15}{'Conflitos GA4':<15}{'Tempo GA4 (s)':<15}\n")
 for i in range(50):
@@ -253,7 +220,7 @@ output.append("Diferença estatisticamente significativa para tempos.\n" if p_va
               0.05 else "Nenhuma diferença significativa para tempos.\n")
 
 # Salvar em arquivo
-with open("resultados_analise_detalhada_diferentes.txt", "w") as file:
+with open("resultados_analise_detalhada_diferentes1.txt", "w") as file:
     file.writelines(output)
 
-print("Análise detalhada salva em 'resultados_analise_detalhada_diferentes.txt'")
+print("Análise detalhada salva em 'resultados_analise_detalhada_diferentes1.txt'")

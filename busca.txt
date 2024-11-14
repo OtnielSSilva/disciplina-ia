@@ -1,8 +1,0 @@
-Melhor Heurística Encontrada: manhattan
-Média de nós explorados (Gulosa): 192.61111111111111
-Média de nós explorados (A*): 1632.3333333333333
-
-Teste Kruskal-Wallis
-Estatística: 23.122875816993457
-Valor-p: 1.5197187500340218e-06
-Diferença estatisticamente significativa entre as buscas Gulosa e A*.
